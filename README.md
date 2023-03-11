@@ -13,4 +13,4 @@ in case C = find_the_largest_number(A,B)
 |   1024   |    256  |  1024 |
 
 ## Idea
-subtraction between any two numbers results in positive sign if 
+subtraction between any two numbers results in positive sign if the subtracted biger than subtracted from it
