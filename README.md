@@ -8,6 +8,6 @@ You have two integers, either positive or negative, and the challenge is to gene
 in case C = find_the_largest_number(A,B)
 |     A    |    B    |   C   |
 | -------- |:-------:| -----:|
-|    5     |    -6   |   5   |
+|     5    |    -6   |   5   |
 |   -25    |    -12  |  -12  |
 |   1024   |    256  |  1024 |
