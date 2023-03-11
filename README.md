@@ -33,5 +33,5 @@ subtraction between any two numbers results in positive sign if the subtracted f
 ## Steps
 ### convert dicimal to binary
 |     A    |    B    | 
-| -------- |:-------:|
+| -------- | -------:|
 |     5    |    -6   |
