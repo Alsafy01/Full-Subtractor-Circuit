@@ -31,4 +31,4 @@ subtraction between any two numbers results in positive sign if the subtracted f
 ![Screenshot (76)](https://user-images.githubusercontent.com/112229984/224514989-da6fa7d5-3bfe-4a29-bde9-cdf7e2319682.png)
 
 ## Steps
-# convert dicimal to binary
+### convert dicimal to binary
