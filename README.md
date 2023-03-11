@@ -15,5 +15,5 @@ in case C = find_the_largest_number(A,B)
 ## Idea
 subtraction between any two numbers results in positive sign if the subtracted from it is biger than subtracted and negative when vice versa, so we can excute the subtraction operation using CNOT gate and check only the sign bit
 
-## Full circuit obtained from ImbQ simulator
+## Full circuit obtained from IbmQ simulator
 ![Screenshot (76)](https://user-images.githubusercontent.com/112229984/224514989-da6fa7d5-3bfe-4a29-bde9-cdf7e2319682.png)
