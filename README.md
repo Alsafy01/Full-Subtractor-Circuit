@@ -12,8 +12,28 @@ in case C = find_the_largest_number(A,B)
 |   -25    |    -12  |  -12  |
 |   1024   |    256  |  1024 |
 
-## Idea
+## Context
 subtraction between any two numbers results in positive sign if the subtracted from it is biger than subtracted and negative when vice versa, so we can excute the subtraction operation using CNOT gate and check only the sign bit
+
+## Idea
+ we are able to build a FS that is capable of performing the binary subtraction operation, using two G3 gates.The proposed FS uses G^3(132) and G^3(231) in addition to two NOT gates, as illustrated. 
+ ![symmetry-13-01842-g009](https://user-images.githubusercontent.com/112229984/224515305-f5dc4e55-ce6e-4618-b502-c7930c27fe2b.png)
+
+ 
+ Setting x2=x3=Y
+, and considering x1
+ and x4
+ as X and Bin
+, respectively, the proposed FS will perform the binary subtraction operation and the y2
+ bit will output Diff
+ and the y4
+ bit will output Bout
+; in addition, y1
+ outputs the result of applying the NOT
+ operation on X and y3
+ performs the XOR
+ operation X⊕Y
+. It is clear that the proposed FS has no constant inputs and no garbage as well.
 
 ## Full circuit obtained from IbmQ simulator
 ![Screenshot (76)](https://user-images.githubusercontent.com/112229984/224514989-da6fa7d5-3bfe-4a29-bde9-cdf7e2319682.png)
