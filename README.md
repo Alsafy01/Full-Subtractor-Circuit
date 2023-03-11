@@ -6,8 +6,8 @@ This is my attempt to the Assessment Task one (also described below) of [QOSF's]
 You have two integers, either positive or negative, and the challenge is to generate a quantum algorithm that returns which is the larger number. Consider an appropriate number of qubits and why it's valid for all kinds of numbers
 
 in case C = find_the_largest_number(A,B)
-| A        | B        | C     |
-| -------- |:--------:| -----:|
-| col 3 is |          |       |
-| col 2 is | centered |       |
-| zebra st | are n    |       |
+|     A    |    B    |   C   |
+| -------- |:-------:| -----:|
+|    5     |    -6   |   5   |
+|   -25    |    -12  |  -12  |
+|   1024   |    256  |  1024 |
