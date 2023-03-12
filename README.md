@@ -31,8 +31,14 @@ subtraction between any two numbers results in positive sign if the subtracted f
 ![Screenshot (76)](https://user-images.githubusercontent.com/112229984/224514989-da6fa7d5-3bfe-4a29-bde9-cdf7e2319682.png)
 
 ## Steps
+
 ### convert dicimal to binary
+convert both numbers to 8421 code binary numbers with adding one more sign bit on the left as 1 means it's negative number and 0 positve number
+
 |     A    |    5    |  0101 |
 | -------- |:-------:| -----:|
 |     B    |    -6   |  1110 |
+
+### Check if numbers are same signs or different signs
+using the same circuit we can 
 
