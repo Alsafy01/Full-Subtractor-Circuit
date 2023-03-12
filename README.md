@@ -32,7 +32,7 @@ subtraction between any two numbers results in positive sign if the subtracted f
 
 ## Steps
 
-###  convert dicimal to binary
+###  Convert dicimal to binary
 convert both numbers to 8421 code binary numbers with adding one more sign bit on the left as 1 means it's negative number and 0 positve number
 
 |     A    |    5    |  0101 |
@@ -44,7 +44,7 @@ using the same FS circuit one the two signs bits we will can get three infos [di
 usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XNOR ) bit which negligent the Borrow in bit and results only about the to numbers bits.
 that can compress the checked bits in more genral problem with Borrow in
 
-* <ins>Borrow in</ins>: = 0
+* <ins>Borrow In</ins>: = 0
 
 |  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |                       
 | -------------- |:-------:| -------:|:-------:|
@@ -53,7 +53,7 @@ that can compress the checked bits in more genral problem with Borrow in
 |  (1,0) (-,+)   |    1    |    0    |    0    |
 |  (1,1) (-,-)   |    0    |    0    |    1    |
 
-* <ins>Borrow in</ins>: = 1
+* <ins>Borrow In</ins>: = 1
 
 |  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |
 | -------------- |:-------:| -------:|:-------:|
@@ -62,6 +62,12 @@ that can compress the checked bits in more genral problem with Borrow in
 |  (1,0) (-,+)   |    0    |    0    |    0    |
 |  (1,1) (-,-)   |    1    |    1    |    1    |
 
-we have 4 possible sign cases both numbers positive, first positive second negative, vice versa and finally both negative
-in the second and third cases we can immediately find the larger number 
-###  
+let's stick with the Borrow in = 0 table we have 4 possible sign cases both numbers positive, first positive second negative, vice versa and finally both negative in the second and third cases we can immediately find the larger number 
+
+###  Circuit Loading
+now we can load the binary digits savely on the our FS circuit by looping throw them and send pair by pair till the last digit
+every iteration we send the pair with the last itration Borrow out as the next iteration Borrow in 
+as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three digits [different, borrow, XNOR] as I name it the <ins>DBX<\ins> numbers
+having the DBX numbers of any iteration we can get all the info needed about that operation and the operation before it and the borrow sent to the next one
+
+###  Circuit Loading
