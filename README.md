@@ -32,14 +32,14 @@ subtraction between any two numbers results in positive sign if the subtracted f
 
 ## Steps
 
-### -convert dicimal to binary
+### - convert dicimal to binary
 convert both numbers to 8421 code binary numbers with adding one more sign bit on the left as 1 means it's negative number and 0 positve number
 
 |     A    |    5    |  0101 |
 | -------- |:-------:| -----:|
 |     B    |    -6   |  1110 |
 
-### -Check if numbers are same signs or different signs
+### - Check if numbers are same signs or different signs
 using the same FS circuit one the two signs bits we will can get three infos [different, Borrow, XNOR]
 usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XOR ) bit that compress the info needed in bit insted of two.
 
