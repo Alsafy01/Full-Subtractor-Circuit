@@ -40,7 +40,7 @@ convert both numbers to 8421 code binary numbers with adding one more sign bit o
 |     B    |    -6   |  1110 |
 
 ###  Check if numbers are same signs or different signs
-using the same FS circuit one the two signs bits we will can get three infos [different, Borrow, XNOR]
+using the same FS circuit one the two signs bits we will can get three info [different, Borrow, XNOR]
 usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XNOR ) bit which negligent the Borrow in bit and results only about the to numbers bits.
 that can compress the checked bits in more genral problem with Borrow in
 
