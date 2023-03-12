@@ -67,7 +67,7 @@ let's stick with the Borrow in = 0 table we have 4 possible sign cases both numb
 ###  Circuit Loading
 now we can load the binary digits savely on the our FS circuit by looping throw them and send pair by pair till the last digit
 every iteration we send the pair with the last itration Borrow out as the next iteration Borrow in 
-as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three digits [different, borrow, XNOR] as I name it the <ins>DBX<\ins> numbers
+as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three digits [different, borrow, XNOR] as I name it the <ins> DBX <\ins> numbers
 having the DBX numbers of any iteration we can get all the info needed about that operation and the operation before it and the borrow sent to the next one
 
 ###  Circuit Loading
