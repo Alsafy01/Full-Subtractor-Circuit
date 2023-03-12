@@ -71,4 +71,4 @@ as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three 
 having the DBX numbers of any iteration we can get all the info needed about that operation and the operation before it and the borrow sent to the next one
 
 ###  Last DBX
-after the loop successfully finishs we have the last DBX number and as we discussed a DBX number of a specific iteration can gives you info about it's operation it can also tell more about the operation before it <ines>which garentie convertabilty </ines>and having the last borrow out it decides which number is larger.
+after the loop successfully finishs we have the last DBX number and as we discussed a DBX number of a specific iteration can gives you info about it's operation it can also tell more about the operation before it <ins> which guarantees convertibility </ins>and having the last borrow out it decides which number is larger.
