@@ -43,9 +43,9 @@ convert both numbers to 8421 code binary numbers with adding one more sign bit o
 using the same FS circuit one the two signs bits we will can get three infos [different, Borrow, XNOR]
 usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XOR ) bit that compress the info needed in bit insted of two.
 
-|  (A,B)(s1,s2)  |    5    |  Borrow |   XNOR  |
+|  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |
 | -------------- |:-------:| -------:|:-------:|
-|  (0,0)(+,+)    |    -6   |    1110 |         |
-|  (0,0)(+,+)    |    -6   |    1110 |         |
-|  (0,0)(+,+)    |    -6   |    1110 |         |
-|  (0,0)(+,+)    |    -6   |    1110 |         |
+|  (0,0)(+,+)    |    0    |    0    |    1    |
+|  (0,1)(+,-)    |    1    |    1    |    0    |
+|  (1,0)(-,+)    |    0    |    1    |    0    |
+|  (1,1)(-,-)    |    1    |    0    |    1    |
