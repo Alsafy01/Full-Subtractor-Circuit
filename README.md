@@ -13,7 +13,7 @@ in case C = find_the_largest_number(A,B)
 |   1024   |    256  |  1024 |
 
 ## Context
-subtraction between any two numbers results in positive sign if the subtracted from it is biger than subtracted and negative when vice versa, so we can excute the subtraction operation using CNOT gate and check only the sign bit
+subtraction between any two numbers results in positive sign if the subtracted from it is biger than the subtracted and negative when vice versa, so we can excute the subtraction operation using universal gate [CNOT, NOT, Toffoli] gates and check only the sign bit
 
 ## Idea
  we are able to build a FS that is capable of performing the binary subtraction operation, using two G3 gates.The proposed FS uses G^3(132) and G^3(231) in addition to two NOT gates, as illustrated in Figure (a). 
@@ -41,8 +41,8 @@ convert both numbers to 8421 code binary numbers with adding one more sign bit o
 
 ###  Check if numbers are same signs or different signs
 using the same FS circuit one the two signs bits we will can get three info [different, Borrow, XNOR]
-usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XNOR ) bit which negligent the Borrow in bit and results only about the to numbers bits.
-that can compress the checked bits in more genral problem with Borrow in
+usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XNOR ) bit which negligent the effect of Borrow in bit on it and it's value only dependes on the to numbers bits, and that reduse the needed info to one bit insted of two.
+so that can compress the checked bits in more genral problem with variable Borrow in
 
 * <ins>Borrow In</ins>: = 0
 
