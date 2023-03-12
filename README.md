@@ -44,13 +44,23 @@ using the same FS circuit one the two signs bits we will can get three infos [di
 usually we in that case we use the (different & borrow) bits to figure out which is positve and which is negative but the no garbge design serves us with the ( XNOR ) bit which negligent the Borrow in bit and results only about the to numbers bits.
 that can compress the checked bits in more genral problem with Borrow in
 
-* <ins>Borrow in</ins>:=0
-|  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |
+* <ins>Borrow in</ins>: = 0
+
+|  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |                       
 | -------------- |:-------:| -------:|:-------:|
 |  (0,0) (+,+)   |    0    |    0    |    1    |
 |  (0,1) (+,-)   |    1    |    1    |    0    |
 |  (1,0) (-,+)   |    1    |    0    |    0    |
 |  (1,1) (-,-)   |    0    |    0    |    1    |
+
+* <ins>Borrow in</ins>: = 1
+
+|  (A,B)(s1,s2)  |different|  Borrow |   XNOR  |
+| -------------- |:-------:| -------:|:-------:|
+|  (0,0) (+,+)   |    1    |    1    |    1    |
+|  (0,1) (+,-)   |    0    |    1    |    0    |
+|  (1,0) (-,+)   |    0    |    0    |    0    |
+|  (1,1) (-,-)   |    1    |    1    |    1    |
 
 we have 4 possible sign cases both numbers positive, first positive second negative, vice versa and finally both negative
 in the second and third cases we can immediately find the larger number 
