@@ -71,7 +71,7 @@ now we can load the binary digits savely on the our FS circuit by looping throw 
 it's valide for all kind of numbers (imaginary fractions and imaginery numbers, "at least for now") because there's no limit on the number of digits it get subtracted pair by pair in a for loop, and the negative numbers got handled thanks to the XNOR output in the circuit
 
 every iteration we send the pair with the last itration Borrow out as the next iteration Borrow in 
-as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three digits [different, borrow, XNOR] as I name it the <ins> DBX </ins> numbers
+as our function different_borrow_XNOR(bitA, bitB, Borrow) returns list of three digits [different, borrow, XNOR] or as I call it the <ins> DBX </ins> numbers
 having the DBX numbers of any iteration we can get all the info needed about that operation and the operation before it and the borrow sent to the next one
 
 ###  Last DBX
