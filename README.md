@@ -78,6 +78,9 @@ having the DBX numbers of any iteration we can get all the info needed about tha
 after the loop successfully finishs we have the last DBX number and as we discussed a DBX number of a specific iteration can gives you info about it's operation it can also tell more about the operation before it <ins> which guarantees convertibility </ins>and having the last borrow out it decides which number is larger.
 
 ### References
+
 [1] [Efficient Designs of Quantum Adder/Subtractor Using Universal Reversible Gate on IBM Q](https://www.mdpi.com/2073-8994/13/10/1842#B21-symmetry-13-01842)
+
 [2] [Toffoli, T. Reversible computing. In International Colloquium on Automata, Languages, and Programming](https://scholar.google.com/scholar_lookup?title=Reversible+computing&author=Toffoli,+T.&publication_year=1980&pages=632%E2%80%93644)
+
 [3] [Younes, A. On the universality of n-bit reversible gate libraries](https://scholar.google.com/scholar_lookup?title=On+the+universality+of+n-bit+reversible+gate+libraries&author=Younes,+A.&publication_year=2015&journal=Appl.+Math.+Inf.+Sci.&volume=9&pages=2579)
